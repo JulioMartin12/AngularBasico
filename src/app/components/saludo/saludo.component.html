@@ -1,0 +1,11 @@
+<h1>!Hola, {{ nombre }} </h1>
+
+<h3 [ngClass]="nombre == 'Anónimo' ? 'anonimo' : 'saludo'"  id="usuario" [innerText]="nombre" >
+
+    <!--  No iniciamos nada en las etiquetas, sino que el valor que viene definido por la propiedad -->
+
+</h3>
+
+
+
+<button id="emit-alerta" (click)="enviarMensajeAlPadre()">Enviar mensaje de saludo al componente padre</button>
